@@ -805,6 +805,7 @@ align-items: center;
 margin-bottom: 24px;
 }
 
+
 .property-click-border {
 display: block;
 width: 16px;
@@ -815,6 +816,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
 }
 
+
 .property-click {
 display: block;
 width: 100%;
@@ -824,10 +826,10 @@ opacity: 0;
 padding: 3px 3px 4px 4px;
 }
 
-.property-click:hover,
+/* .property-click:hover,
 .property-click:focus {
     background-color: var(--pressed-state-color);
-}
+} */
 
 .form-check:checked+.check-field .property-click {
 opacity: 1;
@@ -835,6 +837,8 @@ opacity: 1;
 
 .form-check:checked+.check-field .property-click-border {
 border-color: var(--primery-bcg-color);
+background-color: var(--pressed-state-color);
+color: var(--light-color);
 }
 
 .form-check:focus+.check-field .property-click-border {
@@ -843,28 +847,29 @@ border-color: var(--primery-brand-color);
 
 .modal-form-send {
 display: block;
-/* width: 105px;
-height: 24px; */
-padding: 16px 16px 32px 32px;
+width: 169px;
+height: 56px;
+margin: 16px 16px 32px 32px;
 margin-left: auto;
 margin-right: auto;
-min-width: 150px;
+
 border-radius: 4px;
 background-color: var(--primery-brand-color);
 border: 2px solid transparent;
-
 padding-bottom: 24px;
+padding-top: 24px;
 text-align: center;
+align-items: center;
 justify-content: center;
 color: var(--primery-bcg-color);
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-
-
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display:flex;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-form-send:hover,
 .modal-form-send:focus {
