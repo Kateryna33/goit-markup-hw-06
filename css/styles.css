@@ -520,6 +520,76 @@ height: 40px;
 margin-top: 16px;
 }
 
+/*=========SUBSCRIBE==============*/
+
+.subscribe-form {
+display:block;
+margin-left: auto;
+justify-content: space-between;
+}
+
+.subscribe-name {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var(--primery-bcg-color);
+display: block;
+}
+
+.subscribe-input {
+width: 264px;
+height: 40px;
+margin-top: 16px;
+padding: 8px 24px;
+border: 1px solid #FFFFFF;
+border-radius: 4px;
+color: var(--primery-bcg-color);
+background-color: var(--hero-background-color);
+}
+
+.subscribe-input::placeholder {
+color: var(--primery-bcg-color);
+}
+
+.button-subscribe {
+position: relative;
+display: block;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 24px;
+margin-left: 24px;
+min-width: 165px;
+border-radius: 4px;
+background-color: var(--primery-brand-color);
+border: none;
+
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+text-align: left;
+color: var(--primery-bcg-color);
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+background-color: var(--pressed-state-color);
+}
+
+.arrow-icon-frame {
+position: absolute;
+top: 8px;
+right: 24px;
+}
+
+
 
 
 
@@ -769,7 +839,7 @@ letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
 }
 
-.form-coment:focus {
+.form-comment:focus {
 outline: none;
 border-color: var(--primery-brand-color);
 }
